@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lavender">#8692f7</color>
+    <color name="grey">#808080</color>
+    <color name="green">#4CAF50</color> <!-- Updated to green for the farm -->
+    <color name="mediumGreen">#3E8E41</color> <!-- Updated to medium green for the status bar -->
+    <color name="brown">#8D6E63</color>
+    <color name="colorBackground">#D8F3DC</color>
+    <color name="colorEditTextBackground">#FFFFFF</color>
+    <color name="colorButtonBackground">#74C69D</color>
+    <color name="colorTextBrown">#8B4513</color>
+    <color name="colorTextYellow">#FFFF00</color>
+    <color name="darkgreen">#18392B</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorOnPrimary">#5970C4</color>
+    <color name="colorSurface">#962727</color>
+    <color name="colorOnSurface">#4A7DA6</color>
+    <color name="colorTextPrimary">#B22828</color>
+    <color name="colorTextSecondary">#AD6565</color>
+    <color name="button_clr">#FF74C69D</color>
+    <color name="bg_color">#2c444e</color>
+
+
+
+</resources>

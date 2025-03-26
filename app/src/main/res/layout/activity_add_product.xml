@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/addProductText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="ADD PRODUCT"
+        android:textSize="30dp" />
+    <!-- Product Image View -->
+    <ImageView
+        android:id="@+id/productImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/addProductText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/add_product_bg" />
+
+    <!-- Capture Image Button -->
+
+    <!-- Product Name AutoCompleteTextView -->
+    <Button
+        android:id="@+id/captureImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productImageView"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#378b4e"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:text="Capture Image" />
+
+    <!-- Product Type AutoCompleteTextView -->
+    <AutoCompleteTextView
+        android:id="@+id/productNameAutoComplete"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/captureImageButton"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableStart="@drawable/ic_product"
+        android:drawablePadding="8dp"
+        android:hint="Product Name"
+        android:textColorHint="@color/black"
+        android:paddingStart="12dp"
+        android:textSize="16sp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/productTypeAutoComplete"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/productNameAutoComplete"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Product Type"
+        android:textColorHint="@color/black"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableStart="@drawable/ic_product_type"
+        android:drawablePadding="8dp"
+        android:paddingStart="12dp"
+        android:textSize="16sp"/>
+
+    <!-- Price EditText -->
+    <EditText
+        android:id="@+id/priceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/productTypeAutoComplete"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Price"
+        android:textColorHint="@color/black"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableStart="@drawable/ic_price"
+        android:drawablePadding="8dp"
+        android:paddingStart="12dp"
+        android:textSize="16sp"
+        android:inputType="numberDecimal"/>
+
+    <!-- Quantity EditText -->
+    <EditText
+        android:id="@+id/quantityEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/priceEditText"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Quantity"
+        android:textColorHint="@color/black"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableStart="@drawable/ic_quantity"
+        android:drawablePadding="8dp"
+        android:paddingStart="12dp"
+        android:textSize="16sp"
+        android:inputType="number"/>
+
+    <!-- Add Product Button -->
+    <!-- Add Product Button -->
+
+    <!-- Progress Bar -->
+    <Button
+        android:id="@+id/addProductButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantityEditText"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="130dp"
+        android:backgroundTint="#378b4e"
+        android:elevation="8dp"
+        android:text="Add Product"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="139dp"
+        android:layout_height="131dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

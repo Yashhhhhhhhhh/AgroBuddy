@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/log2">
+
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="34dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="150dp"
+        android:gravity="center"
+        android:textColor="#172413"/>
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome back!"
+        android:layout_marginTop="390dp"
+        android:textSize="34dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:gravity="center"
+        android:textColor="#172413"/>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/loginText"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="Email"
+        android:padding="10sp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:paddingStart="20dp"
+        android:textSize="20sp"
+        android:inputType="textEmailAddress"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_email" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="Password"
+        android:textColorHint="@color/black"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_password" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#2c444e"
+        android:text="LOGIN"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:elevation="8dp"
+        android:padding="5dp" />
+
+
+
+    <TextView
+        android:id="@+id/registerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="New User? Join Us"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+</RelativeLayout>

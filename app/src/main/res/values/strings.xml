@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AgroBuddy</string>
+    <string name="default_web_client_id" translatable="false">YOUR_WEB_CLIENT_ID</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="like_emoji">\uD83D\uDC4D</string> <!-- Unicode for thumbs up emoji -->
+    <string name="likes">likes</string>
+    <string name="blog_gradient">Blog_Gradient</string>
+    <string name="title">Blog_Title</string>
+    <string name="profile_image">Blog_Profile_Image</string>
+    <string name="description">Blog_Description</string>
+    <string name="create_a_new_blog">Create a New Blog!</string>
+    <string name="addTitle">Enter Blog Title</string>
+    <string name="addDesc">Enter Blog Description</string>
+    <string name="selectimage">Select Blog Image</string>
+    <string name="submit">Create</string>
+    <string name="username">Username</string>
+
+</resources>

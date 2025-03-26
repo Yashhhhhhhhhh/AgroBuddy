@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Top TextView -->
+    <TextView
+        android:id="@+id/topTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="REQUEST PRODUCT"
+        android:textColor="@android:color/black"
+        android:textSize="30dp" />
+
+    <!-- Product Name AutoCompleteTextView -->
+    <AutoCompleteTextView
+        android:id="@+id/productNameAutoComplete"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/topTextView"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="16dp"
+        android:hint="Product Name"
+        android:textSize="16sp"
+        android:paddingStart="12dp"
+
+        android:background="@drawable/rounded_edit_text"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_product" />
+
+    <!-- Product Type AutoCompleteTextView -->
+    <AutoCompleteTextView
+        android:id="@+id/productTypeAutoComplete"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/productNameAutoComplete"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Product Type"
+        android:textSize="16sp"
+        android:paddingStart="12dp"
+
+        android:background="@drawable/rounded_edit_text"
+        android:drawableStart="@drawable/ic_product_type"
+        android:drawablePadding="8dp" />
+
+    <!-- Quantity Input -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/tilQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productTypeAutoComplete"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/setQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Quantity in Kg"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edit_text"
+            android:drawableStart="@drawable/ic_quantity"
+            android:drawablePadding="8dp"
+            android:paddingStart="12dp"
+            android:inputType="number" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- Save Product Button -->
+    <Button
+        android:id="@+id/btnSaveProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request Product"
+        android:backgroundTint="#378b4e"
+        android:layout_below="@+id/tilQuantity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+</RelativeLayout>

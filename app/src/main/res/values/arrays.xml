@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="user_types">
+        <item>Farmer</item>
+        <item>Trader</item>
+    </array>
+</resources>

@@ -1,0 +1,65 @@
+<!-- activity_profile.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/rounded_image_border"
+        android:src="@drawable/ic_camera"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/changeProfilePictureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameTextView"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="140dp"
+        android:text="Add Profile Picture" />
+
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/profileImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/fullNameTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"
+        android:text="Username" />
+
+    <!-- Add this TextView for displaying full name -->
+    <TextView
+        android:id="@+id/fullNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/profileImageView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/darker_gray"
+        android:text="Full Name" />
+
+    <GridView
+        android:id="@+id/postsGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/changeProfilePictureButton"
+        android:layout_marginTop="10dp"
+        android:columnWidth="100dp"
+        android:horizontalSpacing="3dp"
+        android:verticalSpacing="3dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth" />
+
+
+</RelativeLayout>

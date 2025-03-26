@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/addSeedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="ADD SEED"
+        android:textSize="30dp" />
+
+    <!-- Seed Image View -->
+    <ImageView
+        android:id="@+id/seedImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/addSeedText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/add_product_bg" />
+
+    <!-- Capture Image Button -->
+    <Button
+        android:id="@+id/captureSeedImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seedImageView"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#378b4e"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:text="Capture Image" />
+
+    <!-- Seed Name AutoCompleteTextView -->
+    <AutoCompleteTextView
+        android:id="@+id/seedNameAutoComplete"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/captureSeedImageButton"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableStart="@drawable/ic_product"
+        android:drawablePadding="8dp"
+        android:hint="Seed Name"
+        android:textColorHint="@color/black"
+        android:paddingStart="12dp"
+        android:textSize="16sp" />
+
+    <!-- Seed Type AutoCompleteTextView -->
+    <AutoCompleteTextView
+        android:id="@+id/seedTypeAutoComplete"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/seedNameAutoComplete"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Seed Type"
+        android:textColorHint="@color/black"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableStart="@drawable/ic_product_type"
+        android:drawablePadding="8dp"
+        android:paddingStart="12dp"
+        android:textSize="16sp" />
+
+    <!-- Price EditText -->
+    <EditText
+        android:id="@+id/seedPriceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/seedTypeAutoComplete"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Price"
+        android:textColorHint="@color/black"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableStart="@drawable/ic_price"
+        android:drawablePadding="8dp"
+        android:paddingStart="12dp"
+        android:textSize="16sp"
+        android:inputType="numberDecimal" />
+
+    <!-- Quantity EditText -->
+    <EditText
+        android:id="@+id/seedQuantityEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/seedPriceEditText"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Quantity"
+        android:textColorHint="@color/black"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableStart="@drawable/ic_quantity"
+        android:drawablePadding="8dp"
+        android:paddingStart="12dp"
+        android:textSize="16sp"
+        android:inputType="number" />
+
+    <!-- Add Seed Button -->
+    <Button
+        android:id="@+id/addSeedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seedQuantityEditText"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="130dp"
+        android:backgroundTint="#378b4e"
+        android:elevation="8dp"
+        android:text="Add Seed"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/seedProgressBar"
+        android:layout_width="139dp"
+        android:layout_height="131dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/otp3"
+    android:paddingStart="16dp"
+    android:paddingTop="16dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".OtpVerificationActivity">
+
+    <TextView
+        android:id="@+id/otpTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OTP VERIFICATION"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="45dp"/>
+
+    <EditText
+        android:id="@+id/otpEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/otpTextView"
+        android:layout_centerHorizontal="true"
+        android:hint="ENTER OTP"
+        android:layout_marginTop="300sp"
+        android:layout_marginStart="30sp"
+        android:layout_marginEnd="30sp"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textSize="20sp"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otpEditText"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sendOtpButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginStart="30sp"
+            android:backgroundTint="#1b2e35"
+            android:text="Send OTP"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="true"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/resendOtpButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#1b2e35"
+            android:text="Resend OTP"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="true"
+            android:layout_marginEnd="30sp"
+            android:layout_marginStart="10sp"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/buttonLayout"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:backgroundTint="#1b2e35"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="true"
+        android:layout_marginEnd="30sp"
+        android:layout_marginStart="30sp"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/submitButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
